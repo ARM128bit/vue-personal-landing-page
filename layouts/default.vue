@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { HeaderMenu } from '@/widgets/header';
-import { FooterMenu } from '@/widgets/footer';
 </script>
 
 <template>

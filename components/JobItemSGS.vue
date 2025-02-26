@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import JobItemPeriod from "./JobItemPeriod.vue";
-import SGSLogo from "@/pages/experience/ui/assets/SGS_Logo.png"
 </script>
 
 <template>
@@ -10,7 +8,7 @@ import SGSLogo from "@/pages/experience/ui/assets/SGS_Logo.png"
     <job-item-period
       from="Dec 2015"
       to="May 2022"
-      :img="SGSLogo"
+      img="./assets/images/SGS_Logo.svg.png"
     />
     <div class="w-[100%]">
       <h2 class="text-2xl py-2">

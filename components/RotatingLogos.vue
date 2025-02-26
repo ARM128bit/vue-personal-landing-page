@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import EllipsesPaths from "@/shared/ui/assets/icons/EllipsesPaths.svg";
+import EllipsesPaths from "@/assets/icons/EllipsesPaths.svg";
 </script>
 
 <template>

@@ -6,12 +6,7 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
   alias: {
-    "@": '../src',
-  },
-  dir: {
-    app: './src/app',
-    layouts: './src/app/layouts',
-    plugins: './src/app/plugins',
+    "@": '.',
   },
   app: {
     head: {
@@ -25,7 +20,7 @@ export default defineNuxtConfig({
     },
     pageTransition: { name: "page", mode: "out-in" },
   },
-  css: ["./src/shared/ui/assets/css/main.css"],
+  css: ["~/assets/css/main.css"],
   vite: {
     plugins: [tailwindcss(), svgLoader()],
     build: {
@@ -39,7 +34,4 @@ export default defineNuxtConfig({
     transpile: ["mdi-vue"],
   },
   modules: ["@nuxt/image"],
-  image: {
-    provider: "none",
-  },
 });

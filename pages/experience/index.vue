@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import JobItemSGS from "./JobItemSGS.vue"
 </script>
 
 <template>
