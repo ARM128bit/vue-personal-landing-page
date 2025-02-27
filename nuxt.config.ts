@@ -1,17 +1,15 @@
 import tailwindcss from "@tailwindcss/vite";
-import svgLoader from 'vite-svg-loader'
+import svgLoader from "vite-svg-loader";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
-  alias: {
-    "@": '../src',
-  },
+  srcDir: 'client',
   dir: {
-    app: './src/app',
-    layouts: './src/app/layouts',
-    plugins: './src/app/plugins',
+    app: "@/client/app",
+    layouts: "@/client/layouts",
+    plugins: "@/client/plugins",
   },
   app: {
     head: {
@@ -25,12 +23,12 @@ export default defineNuxtConfig({
     },
     pageTransition: { name: "page", mode: "out-in" },
   },
-  css: ["./src/shared/ui/assets/css/main.css"],
+  css: ["./client/app/global.css"],
   vite: {
     plugins: [tailwindcss(), svgLoader()],
     build: {
-      chunkSizeWarningLimit: 1600
-    }
+      chunkSizeWarningLimit: 1600,
+    },
   },
   nitro: {
     compressPublicAssets: true,
@@ -39,7 +37,19 @@ export default defineNuxtConfig({
     transpile: ["mdi-vue"],
   },
   modules: ["@nuxt/image"],
-  image: {
-    provider: "none",
+  // components: [
+  //   {
+  //     path: "src/widgets",
+  //     pathPrefix: true,
+  //     prefix: "Widget"
+  //   },
+  // ],
+  imports: {
+    dirs: [
+      // 'shared/**/*.ts',
+      // 'features/**/*.ts',
+      // "src/widgets/**/*.ts",
+      // 'entities/**/*.ts',
+    ],
   },
 });
