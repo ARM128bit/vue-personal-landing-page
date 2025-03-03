@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import About from './ui/About.vue';
-import Skills from './ui/Skills.vue';
-import RotatingLogos from './ui/RotatingLogos.vue';
+import About from './ui/components/About.vue';
+import Skills from './ui/components/Skills.vue';
+import RotatingLogos from './ui/components/RotatingLogos.vue';
 </script>
 
 <template>

@@ -5,12 +5,12 @@ export default <RouterConfig> {
     {
       name: 'Home',
       path: '/',
-      component: () => import('@/client/pages/home/index.vue').then(r => r)
+      component: () => import('@@/client/pages/home/index.vue'),
     },
     {
       name: 'Experience',
       path: '/experience',
-      component: () => import('@/client/pages/experience/index.vue')
+      component: () => import('@@/client/pages/experience/index.vue'),
     }
   ],
 };

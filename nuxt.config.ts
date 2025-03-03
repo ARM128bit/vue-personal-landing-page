@@ -6,11 +6,6 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
   srcDir: 'client',
-  dir: {
-    app: "@/client/app",
-    layouts: "@/client/layouts",
-    plugins: "@/client/plugins",
-  },
   app: {
     head: {
       htmlAttrs: {
@@ -33,17 +28,14 @@ export default defineNuxtConfig({
   nitro: {
     compressPublicAssets: true,
   },
-  build: {
-    transpile: ["mdi-vue"],
-  },
   modules: ["@nuxt/image"],
-  // components: [
-  //   {
-  //     path: "src/widgets",
-  //     pathPrefix: true,
-  //     prefix: "Widget"
-  //   },
-  // ],
+  components: [
+    {
+      path: "widgets",
+      pathPrefix: true,
+      prefix: "Widget"
+    },
+  ],
   imports: {
     dirs: [
       // 'shared/**/*.ts',
