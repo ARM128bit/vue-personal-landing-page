@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import JobItemSGS from "./JobItemSGS.vue"
+import JobItemSGS from "./ui/components/JobItemSGS.vue"
 </script>
 
 <template>

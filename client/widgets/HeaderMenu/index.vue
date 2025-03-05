@@ -2,7 +2,6 @@
 import MenuIcon from "@/shared/ui/assets/icons/menu.svg?component";
 import GithubIcon from "@/shared/ui/assets/icons/github-mark.svg?component";
 import { onClickOutside } from "@vueuse/core";
-import { NuxtLink } from "#components";
 
 const route = useRoute();
 

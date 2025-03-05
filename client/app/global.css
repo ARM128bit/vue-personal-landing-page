@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import './fonts.css';
+@import '@/shared/ui/assets/styles/fonts.css';
 
 body {
   font-family: "RobotoMono", sans-serif;
