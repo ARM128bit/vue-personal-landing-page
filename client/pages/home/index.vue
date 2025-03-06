@@ -7,7 +7,7 @@ import RotatingLogos from './ui/components/RotatingLogos.vue';
 <template>
   <div>
     <About />
-    <div class="grid grid-cols-2">
+    <div class="grid max-md:grid-cols-1 grid-cols-2">
       <Skills />
       <RotatingLogos />
     </div>
