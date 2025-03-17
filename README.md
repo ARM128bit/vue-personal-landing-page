@@ -36,8 +36,3 @@ Locally preview production build:
 npm run preview
 ```
 
-# Caclulation
-
-## Вращение элипса
-(https://stackoverflow.com/questions/69462545/how-to-rotate-a-squashed-circle-ellipse-in-degrees)
-
